@@ -9,13 +9,13 @@
 import numpy as np
 import sys, subprocess;
 sys.path.append('~/');
-import driveClass2 
+import driveClass 
 from glob import glob       
 import os
 
 
 # In[163]:
-c=driveClass2.Case();
+c=driveClass.Case();
 
 
 path = glob("*/");
@@ -55,7 +55,7 @@ for alpha in path:
     #Slist = Slist + [0.09, 0.08, 0.07 , 0.06, 0.05] 
 
 
-    driveClass2.SContin3(alStart, Slist, ReStart, lzStart, siStart, srStart, clist, 40, ReStep)
+    driveClass.SContin(alStart, Slist, ReStart, lzStart, siStart, srStart, clist, 40, ReStep)
 
     os.chdir(cwd);
 
