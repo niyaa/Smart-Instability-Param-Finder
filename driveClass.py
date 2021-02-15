@@ -204,7 +204,7 @@ def unstableLz(Res, lzStart, siStart, srStart, sStart, alStart, clist, Maxitr, R
     Lz = lzStart; si = siStart; sr = srStart
     ResRet=0; LzRet=Lz; siRet=0; srRet=0
 
-    dLz = 0.2
+    dLz = 0.05
     #dLz=0.2;
     maxList=[]; reList=[]; lzList=[]; sigList=[]; srList=[]
     sigMax=-1000;  countItr = 0
